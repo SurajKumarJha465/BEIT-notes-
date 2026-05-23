@@ -1,0 +1,29 @@
+1. What is a Telephone System?
+A telephone system is a communication network that enables voice transmission between users over long distances. It consists of various components like telephone exchanges, transmission lines, switching equipment, and user terminals (phones).
+
+2. Why is Hierarchy Needed in a Telephone System?
+Hierarchies are needed in telephone systems to efficiently manage and multiplex multiple voice calls, ensuring smooth communication without interference or congestion. The hierarchy helps in:
+
+Efficient bandwidth usage by grouping multiple calls together.
+
+Scalability to accommodate a growing number of users.
+
+Reliable communication by organizing signals into structured levels.
+
+3. FDM in Analog Telephone Systems
+In traditional analog telephone systems, multiple voice signals were transmitted over a shared medium using Frequency Division Multiplexing (FDM).
+
+Each call was assigned a unique frequency band.
+
+Guard bands were required to prevent interference.
+
+Used mainly in old landline telephone networks.
+
+4. TDM in Digital Telephone Systems
+Modern telephone systems use Time Division Multiplexing (TDM) in digital networks.
+
+Voice signals are converted into digital form using Pulse Code Modulation (PCM).
+
+Multiple digital signals are transmitted in separate time slots over the same channel.
+
+Used in modern mobile networks, VoIP, and fiber-optic communication.
