@@ -1,0 +1,16 @@
+EmpID,Name,Department,Age,Experience,Salary
+E01,Aarav,IT,28,4,45000
+E02,Sita,HR,35,9,52000
+E03,Bibek,Finance,,6,48000
+E04,Anita,IT,41,15,70000
+E05,Rajan,Marketing,30,5,
+E06,Puja,HR,26,2,38000
+E07,Hari,Finance,45,20,65000
+E08,Gita,IT,33,8,55000
+E09,Suman,Marketing,29,,42000
+E10,Nisha,HR,38,12,950000
+E11,Kiran,Finance,31,7,50000
+E12,Sabina,,27,3,40000
+E04,Anita,IT,41,15,70000
+E13,Manish,IT,90,25,60000
+E06,Puja,HR,26,2,38000
