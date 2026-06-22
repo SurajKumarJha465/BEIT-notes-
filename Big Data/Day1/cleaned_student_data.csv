@@ -1,0 +1,12 @@
+Student_ID,Name,Age,Gender,Phone,Grade,Score,Address,Hobby
+1,Sita,20,Female,9851164494,A,90,Kathmandu,Singing
+2,Shyam,22,Male,9851985123,B,80,Lalitpur,Dancing
+3,Hari,21,Male,986221235,C,70,"SukukDhoka, Bhaktapur",Music
+5,Rita,22,Female,4566564654,B,85,Pokhara,Cricket
+6,Ram,30,Unknown,46456546546,A,80,"Ghantaghar, Dharan",Basketball
+7,Prashant,20,Male,254252452,A,90,Kathmandu,Politics
+8,Satya,22,Male,4242425555,B,80,Lalitpur,Coding
+9,Supreme,21,Male,545454454,C,70,Bhaktapur,Basketball
+10,Deepa,22,Female,121212121,A,80,Kathmandu,Music
+11,Sarita,23,Female,12416212132,A,80,"Lakeside, Pokhara",Books
+12,Unknown,25,Male,98565121212,A,80,"Bandipur, Tanahu",Cricket
