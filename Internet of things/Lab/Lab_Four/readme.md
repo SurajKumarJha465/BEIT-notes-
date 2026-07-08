@@ -17,7 +17,8 @@ In the context of **IoT (Internet of Things)**, embedded systems form the "brain
 
 <p align="center">
   <img src="img/Embedded_System_Block_Diagram.png" alt="Embedded System Block Diagram" width="90%">
-    <em>Figure 1: Embedded System Block Diagram</em>
+  <br>
+  <em>Figure 1: Embedded System Block Diagram</em>
 
 </p>
 
@@ -63,7 +64,8 @@ The Raspberry Pi 4 has a standard 40-pin GPIO header consisting of:
 
 <p align="center">
   <img src="img/Raspberry_Pi_4_Pinout.png" alt="Raspberry Pi 4 Pinout" width="90%">
-    <em>Figure: Raspberry Pi 4 GPIO Pinout</em>
+  <br>
+  <em>Figure 2: Raspberry Pi 4 GPIO Pinout</em>
 
 </p>
 
@@ -88,7 +90,8 @@ On the common 30-pin ESP32 DevKit V1 board, pins are grouped by function: power 
 
 <p align="center">
   <img src="img/ESP32_DevKit_Pinout.png" alt="ESP32 DevKit Pinout" width="90%">
-    <em>Figure: ESP32 DevKit Pinout</em>
+  <br>
+  <em>Figure 3: ESP32 DevKit Pinout</em>
 
 </p>
 
@@ -112,7 +115,8 @@ The silkscreen labels (D0–D8) on a NodeMCU board do **not** match the underlyi
 
 <p align="center">
   <img src="img/NodeMCU_ESP8266_Pinout.webp" alt="NodeMCU ESP8266 Pinout" width="90%">
-    <em>Figure: NodeMCU ESP8266 Pinout</em>
+  <br>
+  <em>Figure 4: NodeMCU ESP8266 Pinout</em>
 
 </p>
 #### D. Arduino Uno
@@ -134,7 +138,8 @@ Digital pins 0 (RX) and 1 (TX) are reserved for serial communication; pin 13 has
 
 <p align="center">
   <img src="img/Arduino_Uno_Pinout.webp" alt="Arduino Uno Pinout" width="90%">
-    <em>Figure: Arduino Uno Pinout</em>
+  <br>
+  <em>Figure 5: Arduino Uno Pinout</em>
 
 </p>
 
