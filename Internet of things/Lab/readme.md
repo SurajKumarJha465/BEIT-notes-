@@ -1,3 +1,13 @@
+# Internet of Things (IoT) Laboratory
+
+## Student Information
+
+| Field | Details |
+|-------|---------|
+| **Name** | Suraj Kumar Jha |
+| **Roll No.** | 231537 |
+| **Email** | suraj231537@ncit.edu.np |
+
 ## Laboratory Experiments
 
 | Lab No. | Experiment Title | Date | Remarks |
