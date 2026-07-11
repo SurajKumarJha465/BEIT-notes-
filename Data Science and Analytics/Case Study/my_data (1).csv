@@ -1,0 +1,1101 @@
+name,city,gender,profession,age,cgpa,placed
+moriarity,,female,phd,28.0,5.94,1
+moriarity,asgard,,bachelor,50.0,8.55,0
+holmes,,female,masters,18.0,5.56,0
+sam,,male,bachelor,25.0,8.57,1
+sam,,male,bachelor,19.0,8.76,1
+bobby,purgatory ,male,bachelor,20.0,7.68,0
+,wakanda,male,,20.0,9.01,0
+,wakanda,male,bachelor,20.0,8.31,0
+moriarity,asgard,female,,19.0,7.2,0
+castiel,,female,masters,,8.35,1
+moriarity,asgard,male,bachelor,19.0,7.66,1
+moriarity,purgatory ,male,bachelor,28.0,,1
+sherlock,wakanda,male,bachelor,48.0,8.75,0
+sam,wakanda,male,bachelor,22.0,9.47,1
+sam,wakanda,male,bachelor,27.0,,0
+moriarity,asgard,male,masters,21.0,8.56,0
+moriarity,wakanda,male,masters,43.0,7.74,1
+sam,asgard,,bachelor,29.0,7.69,0
+,purgatory ,female,bachelor,30.0,7.79,1
+watson,wakanda,male,bachelor,,8.32,0
+dean,purgatory ,male,bachelor,28.0,9.14,1
+holmes,wakanda,male,,29.0,8.66,0
+sam,wakanda,male,bachelor,23.0,8.33,1
+sam,gotham,female,bachelor,30.0,8.21,1
+sam,wakanda,female,phd,42.0,8.36,1
+dean,gotham,male,bachelor,26.0,5.6,1
+moriarity,asgard,male,bachelor,18.0,8.46,1
+sam,gotham,male,bachelor,44.0,9.3,1
+,wakanda,male,phd,20.0,7.83,0
+bobby,gotham,,bachelor,22.0,9.15,1
+sam,wakanda,male,masters,21.0,8.42,1
+moriarity,,male,,21.0,5.33,1
+dean,,male,masters,46.0,,0
+sam,gotham,male,,24.0,5.04,1
+sam,asgard,,,,7.37,0
+sam,purgatory ,female,bachelor,42.0,7.76,1
+,wakanda,female,masters,46.0,4.04,0
+sam,wakanda,female,,21.0,,1
+sam,gotham,male,bachelor,,7.87,0
+sam,gotham,male,phd,25.0,,0
+watson,,male,masters,41.0,7.37,0
+castiel,gotham,male,bachelor,19.0,8.03,1
+sam,gotham,male,bachelor,29.0,8.92,1
+,gotham,,bachelor,25.0,,1
+,,male,bachelor,43.0,7.81,1
+,gotham,male,bachelor,46.0,9.1,1
+moriarity,wakanda,male,bachelor,30.0,9.4,0
+holmes,asgard,male,bachelor,44.0,8.64,1
+moriarity,gotham,male,masters,20.0,9.33,0
+holmes,purgatory ,male,masters,19.0,5.35,0
+moriarity,,male,bachelor,20.0,8.95,0
+dean,wakanda,male,,30.0,8.27,0
+sam,,male,masters,22.0,5.25,0
+sam,,male,phd,28.0,,1
+dean,purgatory ,male,phd,19.0,8.43,1
+sam,wakanda,male,bachelor,29.0,8.13,1
+moriarity,,female,masters,22.0,7.46,0
+moriarity,purgatory ,female,bachelor,47.0,4.5,0
+watson,gotham,male,bachelor,20.0,9.06,0
+sam,,male,,50.0,8.12,1
+moriarity,,male,bachelor,30.0,9.26,1
+,wakanda,male,masters,30.0,8.24,1
+moriarity,wakanda,male,masters,19.0,5.38,0
+,wakanda,,phd,27.0,7.92,0
+moriarity,,male,bachelor,43.0,7.93,1
+sam,gotham,male,bachelor,44.0,7.03,1
+sam,wakanda,male,bachelor,40.0,,1
+sam,,male,phd,23.0,4.43,1
+sherlock,gotham,male,bachelor,19.0,8.49,0
+sam,,male,masters,21.0,,0
+moriarity,gotham,male,bachelor,,4.5,0
+sam,purgatory ,male,phd,26.0,4.58,1
+moriarity,gotham,male,phd,,4.06,0
+castiel,asgard,male,bachelor,22.0,7.41,0
+sherlock,wakanda,male,phd,23.0,9.31,1
+bobby,,male,masters,26.0,,1
+bobby,asgard,male,bachelor,45.0,7.55,1
+moriarity,asgard,male,bachelor,22.0,7.79,1
+moriarity,,female,phd,41.0,7.68,1
+dean,wakanda,male,,49.0,8.64,1
+sam,gotham,male,,22.0,7.29,1
+moriarity,wakanda,male,phd,25.0,7.72,0
+bobby,wakanda,male,masters,,,1
+sherlock,wakanda,male,bachelor,43.0,8.72,1
+sam,,male,phd,29.0,7.19,0
+castiel,asgard,male,masters,24.0,7.71,1
+sherlock,asgard,male,,26.0,8.61,0
+,,male,bachelor,19.0,7.35,0
+moriarity,,male,bachelor,24.0,8.73,0
+sam,wakanda,,bachelor,,8.76,1
+watson,gotham,male,masters,21.0,9.06,0
+sam,asgard,male,bachelor,19.0,7.82,1
+moriarity,asgard,male,bachelor,19.0,7.43,0
+dean,gotham,,masters,29.0,4.58,0
+moriarity,wakanda,male,bachelor,21.0,8.69,1
+,gotham,male,masters,23.0,,1
+sam,purgatory ,male,bachelor,,,0
+moriarity,gotham,male,bachelor,40.0,7.87,0
+sherlock,asgard,,phd,18.0,8.61,0
+,wakanda,male,bachelor,27.0,7.9,0
+moriarity,,male,phd,18.0,8.78,0
+sherlock,gotham,male,bachelor,23.0,8.3,1
+sam,asgard,female,masters,24.0,4.84,1
+holmes,purgatory ,female,bachelor,18.0,5.11,0
+moriarity,wakanda,male,bachelor,30.0,8.17,0
+holmes,purgatory ,male,bachelor,40.0,7.6,0
+sam,,male,bachelor,,8.52,1
+sam,wakanda,female,masters,46.0,7.76,1
+sam,,male,bachelor,27.0,8.1,1
+watson,purgatory ,female,masters,25.0,7.2,0
+sam,asgard,female,,21.0,7.21,0
+,purgatory ,male,phd,40.0,7.26,1
+sam,asgard,male,bachelor,19.0,8.68,1
+sam,wakanda,male,phd,22.0,7.66,1
+sam,gotham,male,masters,27.0,9.36,0
+moriarity,wakanda,male,masters,24.0,8.77,0
+sherlock,wakanda,,masters,49.0,,0
+moriarity,gotham,male,bachelor,30.0,,1
+moriarity,wakanda,male,masters,43.0,7.78,1
+moriarity,gotham,male,bachelor,18.0,7.14,0
+sam,purgatory ,male,,30.0,8.01,0
+watson,gotham,male,,28.0,9.27,1
+holmes,wakanda,male,masters,20.0,4.12,1
+dean,,male,bachelor,44.0,9.13,0
+sam,gotham,female,bachelor,19.0,8.16,1
+sam,,male,bachelor,46.0,8.34,1
+watson,gotham,male,masters,26.0,5.35,1
+moriarity,asgard,male,,,,1
+holmes,wakanda,male,,25.0,9.48,1
+sam,gotham,female,phd,,5.56,0
+dean,gotham,male,masters,45.0,5.49,0
+sam,,,masters,,9.46,0
+sam,,male,bachelor,27.0,8.15,0
+,gotham,female,bachelor,19.0,8.16,0
+sam,asgard,female,,22.0,9.2,0
+sam,asgard,male,bachelor,26.0,5.21,1
+,wakanda,female,,21.0,,0
+moriarity,gotham,male,bachelor,,8.22,1
+,gotham,,masters,19.0,7.05,1
+,wakanda,male,bachelor,24.0,8.05,0
+bobby,gotham,male,,,5.74,1
+moriarity,,male,masters,21.0,8.53,1
+sherlock,wakanda,female,phd,26.0,9.04,1
+moriarity,asgard,male,,19.0,7.01,0
+holmes,purgatory ,male,bachelor,25.0,8.44,1
+sam,purgatory ,male,,19.0,4.68,1
+sam,asgard,male,bachelor,19.0,4.39,0
+moriarity,wakanda,male,bachelor,47.0,9.14,0
+bobby,,female,bachelor,29.0,8.21,1
+sam,,male,phd,28.0,7.94,1
+moriarity,wakanda,male,masters,21.0,9.46,1
+sam,gotham,female,masters,25.0,8.76,1
+moriarity,gotham,male,masters,41.0,7.41,1
+moriarity,asgard,male,,20.0,8.27,0
+sam,asgard,,bachelor,25.0,4.62,1
+,wakanda,male,masters,25.0,5.52,0
+holmes,wakanda,female,bachelor,23.0,8.72,0
+moriarity,wakanda,,,28.0,8.21,1
+dean,asgard,male,phd,27.0,8.31,0
+holmes,purgatory ,male,bachelor,44.0,4.05,1
+bobby,wakanda,male,bachelor,30.0,9.48,1
+sam,wakanda,male,bachelor,21.0,7.89,0
+moriarity,,male,masters,26.0,,1
+sherlock,gotham,male,,47.0,4.4,1
+dean,gotham,male,,40.0,7.97,1
+bobby,,male,masters,,8.72,0
+sam,asgard,male,masters,29.0,5.43,1
+sam,asgard,male,,,9.27,1
+holmes,asgard,,masters,45.0,,0
+holmes,wakanda,male,bachelor,48.0,8.57,0
+watson,wakanda,male,phd,19.0,8.79,1
+moriarity,gotham,male,masters,,5.48,0
+moriarity,wakanda,male,masters,46.0,7.93,1
+watson,wakanda,male,masters,50.0,4.04,1
+,gotham,male,bachelor,50.0,7.35,1
+moriarity,wakanda,male,phd,28.0,8.28,1
+sam,gotham,female,masters,20.0,,0
+bobby,,male,masters,19.0,7.46,1
+sam,wakanda,female,bachelor,43.0,7.45,1
+sam,wakanda,male,phd,30.0,8.74,1
+sam,wakanda,female,masters,22.0,8.91,0
+watson,wakanda,female,phd,49.0,8.77,0
+dean,gotham,male,,46.0,7.39,0
+sam,wakanda,,bachelor,29.0,7.58,0
+sam,purgatory ,male,bachelor,29.0,,0
+dean,wakanda,male,masters,21.0,9.45,1
+sam,gotham,male,,45.0,9.06,0
+holmes,gotham,male,bachelor,43.0,8.74,0
+moriarity,wakanda,,masters,21.0,9.24,1
+moriarity,wakanda,male,bachelor,28.0,7.41,1
+holmes,wakanda,male,bachelor,19.0,8.11,0
+sam,wakanda,male,masters,30.0,5.78,1
+moriarity,purgatory ,male,phd,27.0,8.64,0
+sam,asgard,female,bachelor,50.0,9.03,1
+,wakanda,male,phd,30.0,8.5,1
+holmes,wakanda,male,bachelor,23.0,,0
+sam,wakanda,male,bachelor,25.0,7.64,0
+moriarity,,male,bachelor,,7.31,1
+dean,wakanda,female,masters,22.0,,1
+moriarity,,male,bachelor,20.0,4.06,1
+holmes,gotham,male,bachelor,25.0,5.48,1
+moriarity,wakanda,female,bachelor,30.0,8.35,0
+watson,asgard,male,bachelor,30.0,9.22,1
+,asgard,,bachelor,23.0,7.39,0
+sam,gotham,,bachelor,28.0,8.97,1
+sam,gotham,male,bachelor,,7.46,0
+holmes,wakanda,male,bachelor,24.0,8.53,0
+sam,wakanda,,bachelor,22.0,4.49,1
+bobby,,male,bachelor,20.0,7.82,1
+moriarity,wakanda,male,masters,29.0,8.27,1
+holmes,gotham,female,bachelor,19.0,7.96,1
+,,female,bachelor,30.0,4.67,1
+moriarity,asgard,male,bachelor,26.0,9.37,1
+dean,purgatory ,female,,18.0,5.77,1
+moriarity,wakanda,male,bachelor,30.0,9.31,1
+watson,gotham,female,,,8.49,0
+watson,,male,,25.0,9.49,0
+sam,wakanda,female,bachelor,18.0,8.26,0
+sam,wakanda,male,bachelor,27.0,7.26,0
+watson,wakanda,male,bachelor,21.0,9.29,1
+moriarity,,,bachelor,29.0,8.09,0
+dean,wakanda,male,bachelor,20.0,5.81,1
+sam,wakanda,female,bachelor,19.0,9.16,0
+sam,wakanda,female,,41.0,9.02,0
+,wakanda,male,bachelor,26.0,8.98,1
+moriarity,gotham,male,masters,28.0,8.63,1
+dean,wakanda,male,bachelor,28.0,8.06,0
+dean,wakanda,male,,24.0,8.64,1
+watson,gotham,male,masters,19.0,8.18,1
+moriarity,,male,bachelor,24.0,,1
+sherlock,,female,phd,25.0,8.11,0
+sam,wakanda,male,masters,30.0,5.24,0
+holmes,purgatory ,female,bachelor,28.0,9.1,0
+,,male,masters,18.0,8.23,0
+moriarity,gotham,female,bachelor,28.0,7.88,0
+dean,wakanda,female,,23.0,8.58,0
+holmes,purgatory ,male,bachelor,19.0,5.39,1
+holmes,,male,phd,27.0,8.35,1
+watson,,male,masters,30.0,8.96,0
+sherlock,wakanda,male,,40.0,7.82,0
+moriarity,wakanda,,,21.0,5.26,0
+,gotham,male,masters,27.0,,1
+holmes,,male,bachelor,30.0,9.1,0
+castiel,asgard,male,bachelor,46.0,8.52,1
+moriarity,wakanda,male,bachelor,49.0,7.15,0
+sam,wakanda,male,masters,22.0,5.17,0
+moriarity,,male,bachelor,29.0,9.44,1
+bobby,purgatory ,female,,,8.35,0
+holmes,gotham,male,bachelor,23.0,7.53,1
+dean,wakanda,male,bachelor,,8.5,0
+sam,purgatory ,male,phd,22.0,8.58,0
+holmes,wakanda,female,,50.0,8.53,0
+sherlock,,,,18.0,7.3,1
+dean,asgard,female,masters,30.0,7.49,1
+holmes,gotham,male,masters,29.0,8.64,0
+dean,purgatory ,male,masters,19.0,5.67,0
+sam,asgard,male,masters,18.0,9.3,1
+sherlock,,male,,45.0,7.33,1
+sherlock,wakanda,female,masters,26.0,4.3,0
+holmes,wakanda,male,masters,22.0,5.44,0
+holmes,gotham,female,phd,47.0,8.4,0
+sam,wakanda,male,masters,46.0,7.53,0
+dean,wakanda,male,masters,24.0,9.05,0
+sam,purgatory ,male,,28.0,9.06,1
+moriarity,asgard,male,bachelor,21.0,9.39,0
+sam,purgatory ,male,masters,20.0,,1
+watson,wakanda,male,masters,25.0,5.34,1
+holmes,wakanda,male,bachelor,44.0,,0
+holmes,purgatory ,female,phd,25.0,9.38,0
+moriarity,asgard,male,masters,28.0,7.38,1
+holmes,purgatory ,male,bachelor,23.0,,1
+dean,wakanda,male,,26.0,9.49,1
+,gotham,male,masters,18.0,7.33,0
+moriarity,wakanda,,bachelor,24.0,9.13,0
+watson,purgatory ,male,,23.0,8.94,0
+sam,,female,bachelor,29.0,8.62,1
+moriarity,purgatory ,female,masters,26.0,8.87,0
+,,male,,19.0,,1
+sam,wakanda,male,bachelor,45.0,4.01,1
+sam,gotham,male,bachelor,26.0,8.12,0
+,asgard,female,masters,,9.12,1
+bobby,wakanda,female,,20.0,8.15,1
+dean,wakanda,female,bachelor,18.0,8.7,1
+dean,purgatory ,male,,41.0,4.45,1
+,,female,bachelor,45.0,9.04,1
+moriarity,purgatory ,male,bachelor,50.0,,1
+moriarity,,male,masters,26.0,8.05,0
+moriarity,gotham,male,bachelor,25.0,9.39,1
+watson,purgatory ,male,masters,,,0
+holmes,,male,phd,27.0,7.59,1
+dean,gotham,female,,20.0,,1
+sam,gotham,male,bachelor,21.0,9.29,0
+sam,,male,,20.0,7.37,0
+moriarity,wakanda,male,masters,,5.14,0
+moriarity,,male,masters,29.0,7.48,0
+holmes,,,bachelor,48.0,5.98,1
+bobby,wakanda,male,masters,50.0,7.63,0
+sam,wakanda,female,bachelor,25.0,7.47,0
+moriarity,gotham,,masters,30.0,8.5,0
+bobby,gotham,male,bachelor,45.0,7.59,1
+holmes,wakanda,male,bachelor,,7.99,1
+,wakanda,male,phd,27.0,7.03,1
+bobby,,male,bachelor,,7.7,1
+,wakanda,male,bachelor,26.0,8.27,1
+bobby,,male,masters,28.0,8.32,1
+bobby,gotham,,bachelor,28.0,,0
+moriarity,wakanda,male,bachelor,48.0,5.48,1
+watson,wakanda,male,bachelor,24.0,9.27,1
+watson,wakanda,female,bachelor,23.0,8.34,1
+watson,gotham,female,bachelor,24.0,4.25,0
+sam,gotham,female,phd,18.0,,1
+moriarity,asgard,male,bachelor,25.0,7.84,0
+sam,wakanda,male,masters,21.0,,1
+moriarity,asgard,female,bachelor,26.0,8.73,0
+dean,purgatory ,male,,25.0,9.29,1
+dean,,male,,27.0,4.05,0
+sam,wakanda,male,masters,29.0,5.01,1
+watson,gotham,female,,41.0,9.47,0
+sam,wakanda,male,phd,27.0,8.65,0
+dean,wakanda,male,bachelor,21.0,8.47,0
+holmes,,male,bachelor,,,1
+moriarity,wakanda,female,masters,27.0,4.2,0
+dean,,,bachelor,26.0,7.13,0
+holmes,gotham,female,masters,27.0,8.51,0
+bobby,,male,bachelor,27.0,5.92,0
+,wakanda,male,bachelor,22.0,,1
+,purgatory ,male,,47.0,7.45,1
+holmes,,female,bachelor,29.0,5.11,0
+sam,wakanda,male,bachelor,28.0,7.07,1
+moriarity,gotham,male,phd,24.0,5.45,1
+dean,,male,phd,21.0,7.45,0
+moriarity,wakanda,male,,28.0,8.4,1
+moriarity,gotham,male,bachelor,21.0,8.71,1
+sam,gotham,female,masters,21.0,8.58,1
+sam,asgard,female,bachelor,,8.28,0
+holmes,wakanda,male,bachelor,23.0,7.53,1
+sam,asgard,,masters,24.0,8.94,1
+moriarity,gotham,male,bachelor,28.0,7.67,0
+dean,purgatory ,male,bachelor,26.0,8.52,1
+sam,asgard,male,masters,19.0,4.39,1
+holmes,gotham,male,bachelor,19.0,4.52,0
+holmes,wakanda,male,bachelor,19.0,,0
+holmes,purgatory ,female,bachelor,27.0,7.49,1
+bobby,asgard,male,bachelor,22.0,5.51,0
+,,female,,,7.43,0
+moriarity,gotham,male,bachelor,29.0,,1
+sam,gotham,male,bachelor,49.0,7.95,0
+sam,wakanda,female,bachelor,41.0,,0
+sam,gotham,male,masters,46.0,8.65,1
+sam,purgatory ,male,bachelor,22.0,7.66,1
+watson,wakanda,male,bachelor,,,1
+moriarity,wakanda,female,,24.0,4.22,0
+moriarity,wakanda,female,bachelor,,5.05,0
+moriarity,,female,,24.0,7.77,1
+moriarity,,female,bachelor,18.0,8.52,1
+moriarity,wakanda,male,masters,28.0,7.49,0
+holmes,,female,masters,19.0,5.64,0
+holmes,,,,,8.46,0
+holmes,wakanda,male,bachelor,19.0,,1
+moriarity,,male,masters,23.0,7.73,0
+castiel,,male,masters,20.0,8.26,1
+sam,asgard,female,bachelor,25.0,4.03,0
+holmes,gotham,male,bachelor,30.0,8.29,1
+holmes,gotham,female,bachelor,24.0,4.94,0
+dean,,female,masters,26.0,8.16,0
+moriarity,gotham,female,masters,25.0,5.01,0
+,asgard,male,bachelor,28.0,4.32,0
+moriarity,wakanda,male,bachelor,26.0,5.42,1
+bobby,wakanda,male,masters,20.0,8.5,1
+holmes,,female,bachelor,27.0,4.99,1
+,purgatory ,male,masters,27.0,7.28,0
+moriarity,gotham,male,bachelor,47.0,8.67,0
+sherlock,asgard,male,bachelor,28.0,7.46,0
+holmes,asgard,male,,47.0,8.78,0
+holmes,wakanda,female,masters,47.0,,1
+moriarity,gotham,male,masters,28.0,9.16,1
+bobby,,male,masters,28.0,7.04,0
+holmes,wakanda,male,masters,21.0,8.9,1
+dean,gotham,male,masters,28.0,4.02,1
+sam,gotham,female,bachelor,26.0,7.72,1
+moriarity,wakanda,male,bachelor,25.0,9.43,0
+dean,wakanda,male,phd,21.0,,0
+sam,wakanda,female,masters,45.0,4.29,1
+holmes,asgard,male,bachelor,47.0,,1
+moriarity,wakanda,female,bachelor,18.0,8.48,0
+,wakanda,male,,30.0,5.63,1
+moriarity,,male,phd,,9.19,1
+bobby,wakanda,female,,26.0,7.29,1
+watson,wakanda,female,bachelor,27.0,7.54,0
+moriarity,asgard,,,26.0,9.03,0
+sam,wakanda,male,bachelor,43.0,7.82,1
+sam,asgard,,bachelor,29.0,4.74,0
+,purgatory ,male,bachelor,24.0,5.15,1
+moriarity,purgatory ,female,bachelor,,8.61,1
+moriarity,,male,phd,26.0,5.57,1
+sam,wakanda,male,bachelor,27.0,8.36,1
+sam,wakanda,male,phd,20.0,9.02,0
+sam,,male,masters,30.0,4.89,0
+dean,purgatory ,male,bachelor,20.0,8.5,1
+moriarity,wakanda,male,masters,19.0,9.01,0
+moriarity,wakanda,male,,,,1
+moriarity,purgatory ,,,42.0,5.17,0
+dean,gotham,male,bachelor,28.0,8.77,1
+bobby,,male,,26.0,8.68,1
+bobby,,female,,29.0,5.41,1
+dean,gotham,male,phd,30.0,4.56,1
+,gotham,male,masters,41.0,5.78,1
+sam,purgatory ,,bachelor,21.0,7.76,0
+sam,gotham,male,masters,20.0,5.91,1
+moriarity,,male,bachelor,,8.58,0
+holmes,purgatory ,male,bachelor,27.0,9.31,0
+bobby,wakanda,male,bachelor,26.0,7.08,0
+sam,,male,masters,43.0,,1
+sam,gotham,female,bachelor,47.0,7.35,0
+moriarity,purgatory ,,,19.0,4.47,0
+moriarity,gotham,male,bachelor,18.0,4.97,1
+holmes,gotham,male,masters,23.0,8.08,0
+watson,gotham,male,,24.0,7.6,1
+holmes,,,phd,18.0,7.73,0
+holmes,gotham,female,bachelor,29.0,8.82,0
+bobby,gotham,male,bachelor,19.0,7.1,0
+dean,gotham,male,bachelor,43.0,,0
+holmes,wakanda,male,masters,44.0,8.86,1
+sherlock,asgard,male,masters,,7.73,0
+moriarity,wakanda,male,phd,27.0,8.64,1
+,asgard,male,masters,28.0,8.3,0
+sam,purgatory ,male,,28.0,,1
+holmes,gotham,,bachelor,43.0,7.39,0
+,gotham,male,bachelor,27.0,,1
+sam,gotham,male,phd,24.0,4.88,0
+moriarity,wakanda,male,bachelor,22.0,4.32,0
+sam,gotham,male,phd,30.0,8.66,0
+moriarity,wakanda,male,bachelor,25.0,9.14,1
+holmes,purgatory ,male,phd,,8.44,1
+watson,,male,bachelor,27.0,8.8,1
+holmes,,male,bachelor,22.0,7.69,0
+holmes,gotham,male,masters,50.0,7.77,0
+holmes,asgard,male,bachelor,,7.75,0
+holmes,asgard,male,masters,22.0,,0
+holmes,wakanda,female,bachelor,47.0,8.62,1
+sam,purgatory ,female,masters,41.0,7.63,0
+moriarity,wakanda,,bachelor,28.0,,0
+,wakanda,male,,30.0,7.17,0
+holmes,wakanda,male,bachelor,19.0,9.11,0
+holmes,gotham,male,phd,27.0,,0
+sherlock,asgard,male,masters,29.0,8.72,1
+moriarity,,female,bachelor,19.0,7.63,0
+moriarity,asgard,male,,47.0,5.13,1
+holmes,wakanda,male,bachelor,21.0,9.06,0
+,wakanda,male,,22.0,7.72,0
+watson,,male,masters,18.0,7.77,0
+holmes,wakanda,,bachelor,47.0,5.64,1
+moriarity,,female,phd,23.0,7.6,0
+,gotham,male,bachelor,25.0,5.4,1
+watson,purgatory ,female,,30.0,5.32,0
+sam,gotham,male,,,,0
+bobby,wakanda,male,masters,29.0,4.29,0
+sam,gotham,male,bachelor,19.0,5.06,1
+moriarity,asgard,male,masters,20.0,8.08,1
+moriarity,gotham,male,bachelor,22.0,7.11,0
+,wakanda,male,bachelor,,5.88,1
+holmes,,male,phd,18.0,8.35,1
+watson,wakanda,male,phd,23.0,7.26,0
+holmes,,male,bachelor,48.0,,1
+sherlock,wakanda,male,,19.0,8.14,0
+sam,asgard,male,bachelor,19.0,7.44,1
+dean,purgatory ,male,bachelor,43.0,4.98,0
+moriarity,asgard,,bachelor,25.0,7.44,1
+moriarity,purgatory ,female,bachelor,45.0,7.76,0
+holmes,wakanda,male,,50.0,9.49,1
+sam,wakanda,male,masters,30.0,7.41,0
+bobby,asgard,male,bachelor,43.0,9.01,0
+bobby,asgard,male,phd,40.0,7.55,0
+holmes,gotham,female,,24.0,8.69,0
+moriarity,gotham,male,,47.0,,1
+holmes,gotham,male,masters,28.0,7.63,1
+moriarity,,male,,40.0,7.45,0
+sam,wakanda,female,bachelor,45.0,7.17,1
+moriarity,gotham,female,bachelor,19.0,7.63,1
+moriarity,asgard,female,masters,24.0,7.22,0
+moriarity,,female,bachelor,30.0,4.61,0
+holmes,wakanda,male,bachelor,45.0,7.76,1
+sam,,male,bachelor,18.0,9.49,1
+,gotham,female,bachelor,,8.94,0
+,gotham,male,bachelor,22.0,7.27,0
+dean,wakanda,male,masters,23.0,7.79,0
+dean,gotham,male,masters,22.0,8.92,0
+bobby,gotham,female,bachelor,,7.38,1
+dean,purgatory ,female,,27.0,,0
+sherlock,gotham,male,masters,25.0,8.2,0
+holmes,asgard,male,masters,21.0,7.69,0
+sam,wakanda,male,phd,30.0,7.74,1
+moriarity,,male,bachelor,45.0,7.08,1
+dean,asgard,female,phd,23.0,7.13,1
+sam,,male,bachelor,25.0,8.94,0
+moriarity,asgard,male,bachelor,,9.13,0
+sam,wakanda,male,bachelor,29.0,8.6,1
+dean,asgard,male,masters,30.0,5.53,0
+moriarity,wakanda,male,bachelor,23.0,7.64,0
+sam,,,bachelor,25.0,8.32,1
+holmes,wakanda,,masters,,5.59,0
+moriarity,asgard,male,bachelor,28.0,7.09,0
+holmes,gotham,,,27.0,9.24,0
+sam,wakanda,male,bachelor,,,0
+moriarity,gotham,female,bachelor,18.0,5.81,0
+moriarity,,male,bachelor,20.0,7.8,0
+bobby,wakanda,male,masters,21.0,,0
+bobby,wakanda,male,bachelor,,9.28,0
+sam,wakanda,male,masters,22.0,,1
+moriarity,wakanda,,phd,23.0,7.52,0
+moriarity,gotham,female,bachelor,20.0,9.05,0
+bobby,wakanda,male,bachelor,,8.69,0
+holmes,wakanda,male,masters,,5.0,1
+holmes,wakanda,male,bachelor,22.0,8.25,1
+moriarity,wakanda,male,bachelor,21.0,,0
+sam,asgard,male,bachelor,,5.07,1
+sherlock,gotham,male,phd,18.0,9.13,0
+sam,wakanda,,bachelor,44.0,8.6,1
+castiel,gotham,male,masters,41.0,8.56,1
+castiel,asgard,female,bachelor,23.0,9.21,1
+watson,asgard,male,,30.0,,1
+moriarity,gotham,male,,,9.16,0
+sam,wakanda,male,phd,,,1
+dean,,male,,47.0,8.11,0
+holmes,,male,masters,26.0,8.92,1
+moriarity,gotham,male,bachelor,22.0,7.61,1
+moriarity,purgatory ,male,,18.0,,1
+moriarity,,male,masters,30.0,,0
+watson,purgatory ,,phd,,7.37,0
+sam,asgard,female,bachelor,50.0,4.56,1
+dean,,female,masters,30.0,,1
+bobby,,male,masters,25.0,8.66,1
+moriarity,purgatory ,,bachelor,26.0,8.61,0
+sherlock,wakanda,,masters,30.0,8.35,0
+holmes,wakanda,male,bachelor,30.0,5.87,1
+bobby,gotham,female,,26.0,,1
+holmes,gotham,male,bachelor,,4.35,0
+sam,purgatory ,,masters,22.0,7.08,1
+moriarity,wakanda,male,masters,26.0,9.42,0
+watson,,male,masters,20.0,,1
+bobby,wakanda,female,masters,30.0,5.07,1
+bobby,wakanda,male,masters,43.0,7.08,0
+dean,gotham,male,masters,50.0,7.71,0
+dean,wakanda,male,phd,27.0,9.11,0
+watson,gotham,female,bachelor,25.0,,0
+holmes,wakanda,male,masters,22.0,7.18,0
+moriarity,gotham,male,phd,23.0,7.39,0
+moriarity,wakanda,,,,4.35,1
+bobby,asgard,male,bachelor,20.0,,1
+moriarity,gotham,female,masters,22.0,7.08,1
+,wakanda,female,bachelor,21.0,7.77,0
+moriarity,wakanda,female,phd,49.0,8.8,0
+,purgatory ,male,masters,28.0,7.9,1
+sherlock,gotham,male,bachelor,23.0,8.02,0
+moriarity,gotham,male,,26.0,8.25,1
+sam,gotham,male,bachelor,45.0,8.85,0
+holmes,gotham,male,phd,47.0,8.1,1
+moriarity,wakanda,,bachelor,25.0,4.61,0
+holmes,asgard,,masters,27.0,7.8,1
+sam,purgatory ,female,masters,29.0,8.48,1
+moriarity,wakanda,,masters,30.0,9.14,0
+moriarity,purgatory ,female,,23.0,8.26,0
+,asgard,female,masters,23.0,5.99,1
+holmes,wakanda,male,bachelor,,9.45,1
+bobby,wakanda,male,bachelor,27.0,,1
+holmes,wakanda,,,21.0,8.19,1
+moriarity,wakanda,male,masters,25.0,7.82,1
+bobby,asgard,female,bachelor,18.0,8.35,0
+moriarity,wakanda,female,phd,49.0,,0
+bobby,,male,phd,46.0,9.23,1
+holmes,asgard,female,phd,22.0,8.12,1
+dean,purgatory ,male,bachelor,21.0,9.25,0
+sam,asgard,male,masters,23.0,9.47,1
+sam,wakanda,male,bachelor,,9.34,1
+dean,wakanda,female,bachelor,22.0,9.33,0
+sam,wakanda,male,,,8.03,1
+watson,asgard,male,bachelor,18.0,7.87,0
+sherlock,wakanda,male,phd,25.0,8.56,1
+holmes,wakanda,male,,18.0,9.09,1
+bobby,purgatory ,male,bachelor,,7.1,1
+moriarity,gotham,,bachelor,46.0,9.37,1
+holmes,wakanda,male,phd,,8.19,0
+watson,purgatory ,male,,41.0,9.35,1
+bobby,asgard,female,bachelor,19.0,8.63,1
+,gotham,male,masters,,7.02,0
+holmes,wakanda,male,bachelor,26.0,7.85,0
+dean,wakanda,male,bachelor,21.0,7.17,1
+watson,gotham,male,bachelor,29.0,7.95,0
+sam,gotham,male,bachelor,,9.27,0
+bobby,wakanda,male,phd,25.0,7.94,0
+watson,wakanda,male,masters,23.0,5.1,0
+moriarity,wakanda,female,,23.0,9.12,1
+bobby,,male,masters,29.0,,1
+moriarity,wakanda,male,,21.0,7.83,1
+holmes,asgard,male,,27.0,8.95,1
+,wakanda,male,bachelor,42.0,9.12,0
+holmes,,male,bachelor,,7.19,1
+watson,gotham,male,,29.0,7.32,0
+sam,,male,masters,20.0,,0
+moriarity,,male,phd,24.0,8.68,1
+moriarity,,,bachelor,25.0,9.43,1
+moriarity,asgard,male,phd,23.0,7.03,0
+sam,,male,bachelor,30.0,5.52,1
+moriarity,gotham,male,bachelor,,8.87,1
+sam,purgatory ,male,masters,47.0,4.21,1
+watson,purgatory ,male,bachelor,20.0,4.65,1
+holmes,purgatory ,,,28.0,,0
+sam,asgard,male,,21.0,8.68,0
+sam,wakanda,male,bachelor,49.0,4.11,1
+moriarity,purgatory ,male,bachelor,29.0,7.1,1
+dean,,male,phd,30.0,8.43,0
+,wakanda,male,masters,47.0,8.69,1
+holmes,,male,bachelor,22.0,8.51,0
+moriarity,gotham,male,bachelor,21.0,8.39,1
+bobby,wakanda,male,,21.0,7.69,1
+sherlock,wakanda,male,bachelor,47.0,7.94,0
+moriarity,asgard,male,bachelor,47.0,,0
+holmes,asgard,male,,41.0,7.03,0
+holmes,,male,masters,19.0,9.0,0
+bobby,asgard,,,21.0,9.34,1
+sherlock,,,bachelor,21.0,,0
+holmes,purgatory ,female,masters,,4.02,1
+moriarity,gotham,female,bachelor,20.0,,1
+holmes,purgatory ,male,bachelor,,8.58,0
+dean,wakanda,male,phd,,9.03,0
+,gotham,female,,20.0,7.74,0
+moriarity,gotham,female,bachelor,25.0,,0
+sherlock,wakanda,male,bachelor,26.0,7.19,1
+holmes,wakanda,female,masters,19.0,9.16,1
+moriarity,gotham,,,22.0,9.37,1
+bobby,,male,,50.0,,1
+,,,,,5.72,0
+moriarity,wakanda,male,,28.0,4.38,0
+sam,wakanda,male,phd,21.0,8.24,1
+dean,wakanda,male,masters,28.0,,0
+holmes,asgard,male,bachelor,18.0,5.12,0
+moriarity,gotham,,bachelor,25.0,4.71,1
+sam,wakanda,male,bachelor,23.0,4.68,0
+sam,wakanda,female,masters,23.0,9.21,0
+holmes,gotham,male,masters,23.0,8.51,0
+holmes,purgatory ,female,masters,27.0,7.68,0
+moriarity,gotham,male,bachelor,44.0,4.03,1
+,wakanda,male,bachelor,45.0,7.37,1
+,gotham,female,bachelor,41.0,4.54,1
+sam,gotham,female,bachelor,29.0,7.61,1
+moriarity,wakanda,female,masters,,8.63,1
+moriarity,,male,bachelor,46.0,4.9,0
+sam,,male,bachelor,19.0,8.14,1
+bobby,wakanda,male,masters,28.0,7.39,0
+moriarity,purgatory ,male,masters,24.0,7.59,0
+moriarity,asgard,female,bachelor,43.0,,0
+,asgard,male,bachelor,25.0,7.25,0
+dean,wakanda,female,bachelor,26.0,5.09,0
+holmes,asgard,female,bachelor,22.0,4.58,1
+sam,wakanda,female,bachelor,23.0,5.47,1
+watson,wakanda,male,bachelor,42.0,9.43,1
+,,male,,30.0,8.54,0
+dean,wakanda,,phd,,8.35,0
+sam,purgatory ,female,bachelor,30.0,5.9,0
+watson,gotham,male,masters,27.0,5.47,1
+bobby,asgard,male,,28.0,7.88,0
+moriarity,wakanda,male,bachelor,20.0,9.45,1
+sam,,male,bachelor,,9.31,1
+sam,wakanda,female,,42.0,9.16,0
+bobby,gotham,female,,25.0,5.26,0
+sam,wakanda,male,bachelor,30.0,7.14,1
+moriarity,gotham,male,,24.0,7.91,1
+sam,wakanda,female,bachelor,26.0,9.39,0
+moriarity,,male,bachelor,,5.81,1
+bobby,,male,masters,25.0,5.13,0
+dean,asgard,male,masters,49.0,9.43,1
+,asgard,male,bachelor,,7.08,0
+moriarity,asgard,male,bachelor,19.0,7.32,1
+sam,wakanda,male,bachelor,48.0,,0
+sam,,male,bachelor,24.0,8.64,1
+moriarity,wakanda,male,,25.0,7.58,0
+sam,,,bachelor,48.0,5.96,0
+sam,purgatory ,female,bachelor,,7.28,0
+dean,wakanda,male,bachelor,20.0,9.31,0
+,asgard,male,masters,27.0,9.27,0
+,,male,,,7.53,0
+moriarity,gotham,male,bachelor,19.0,7.25,0
+sam,,male,bachelor,18.0,4.81,1
+moriarity,gotham,female,bachelor,45.0,9.14,1
+sam,wakanda,male,masters,24.0,9.21,1
+dean,asgard,male,phd,,8.79,1
+bobby,gotham,male,bachelor,22.0,5.78,1
+moriarity,gotham,female,phd,19.0,5.72,0
+moriarity,wakanda,male,bachelor,45.0,4.2,1
+moriarity,wakanda,male,masters,42.0,7.1,0
+sam,,male,bachelor,20.0,,1
+holmes,asgard,female,bachelor,22.0,7.71,0
+,asgard,male,masters,23.0,,0
+sam,wakanda,male,bachelor,23.0,9.4,1
+moriarity,gotham,male,bachelor,48.0,8.24,0
+holmes,wakanda,female,,49.0,9.3,0
+sam,wakanda,male,phd,46.0,7.27,1
+sam,purgatory ,female,phd,,7.28,0
+dean,purgatory ,male,masters,40.0,8.27,1
+sam,wakanda,male,bachelor,,8.12,0
+sam,wakanda,female,bachelor,,,1
+sherlock,wakanda,female,bachelor,,,1
+bobby,,male,,21.0,,0
+sam,asgard,male,masters,24.0,9.01,1
+holmes,purgatory ,female,masters,29.0,7.78,1
+sam,asgard,male,masters,18.0,,0
+sherlock,,male,bachelor,24.0,,1
+sam,wakanda,,bachelor,50.0,9.27,1
+moriarity,wakanda,male,masters,24.0,8.95,1
+sam,wakanda,male,bachelor,20.0,7.95,0
+sam,purgatory ,male,bachelor,18.0,8.58,0
+dean,wakanda,male,bachelor,44.0,,1
+watson,gotham,male,phd,18.0,7.89,1
+holmes,wakanda,female,masters,29.0,7.12,1
+sherlock,wakanda,male,phd,29.0,4.65,0
+holmes,wakanda,female,bachelor,,,1
+holmes,wakanda,female,bachelor,47.0,7.33,0
+moriarity,gotham,,bachelor,45.0,8.6,1
+dean,,male,masters,30.0,7.38,0
+sam,asgard,male,bachelor,27.0,8.74,1
+dean,wakanda,male,phd,,7.44,0
+holmes,gotham,male,bachelor,20.0,8.36,1
+bobby,asgard,,,25.0,8.89,0
+moriarity,wakanda,male,phd,28.0,7.95,1
+holmes,wakanda,male,masters,29.0,8.03,1
+moriarity,asgard,,masters,22.0,,0
+sam,,male,bachelor,21.0,9.21,1
+sam,gotham,,,29.0,9.21,1
+moriarity,gotham,male,bachelor,26.0,8.59,1
+sam,gotham,male,bachelor,21.0,8.97,1
+dean,wakanda,male,bachelor,41.0,7.27,1
+holmes,gotham,male,masters,23.0,9.45,1
+sam,asgard,male,,,7.21,0
+holmes,wakanda,female,bachelor,19.0,4.84,0
+moriarity,,male,bachelor,19.0,7.27,0
+bobby,gotham,male,masters,25.0,7.83,1
+moriarity,purgatory ,male,bachelor,49.0,9.38,1
+sam,asgard,male,phd,22.0,7.27,0
+watson,purgatory ,female,bachelor,42.0,8.35,1
+dean,purgatory ,male,bachelor,49.0,9.16,0
+holmes,wakanda,female,,27.0,9.16,0
+dean,wakanda,male,masters,24.0,5.6,1
+holmes,gotham,male,phd,29.0,4.48,1
+watson,wakanda,female,bachelor,30.0,8.23,0
+dean,gotham,,,,8.08,0
+holmes,,male,,19.0,5.81,0
+sam,wakanda,male,,20.0,8.57,1
+moriarity,,male,,44.0,9.17,0
+moriarity,,female,bachelor,30.0,5.65,0
+holmes,wakanda,male,bachelor,,9.11,0
+sam,wakanda,male,bachelor,46.0,7.88,0
+moriarity,,male,masters,20.0,8.86,1
+moriarity,purgatory ,male,,24.0,9.4,0
+moriarity,asgard,,bachelor,27.0,9.36,0
+,wakanda,,bachelor,26.0,9.41,1
+moriarity,,male,bachelor,28.0,8.38,1
+sherlock,gotham,male,masters,28.0,7.55,1
+sam,wakanda,male,bachelor,29.0,9.24,0
+moriarity,gotham,male,masters,18.0,8.28,1
+moriarity,gotham,male,bachelor,22.0,8.87,0
+holmes,asgard,,bachelor,18.0,4.91,1
+sherlock,,,masters,,8.26,1
+moriarity,gotham,male,masters,24.0,7.18,0
+bobby,purgatory ,female,bachelor,43.0,9.36,0
+,wakanda,male,masters,28.0,7.08,0
+sam,wakanda,male,masters,27.0,9.12,1
+moriarity,,female,masters,23.0,8.74,0
+holmes,,male,bachelor,47.0,7.95,0
+sherlock,wakanda,female,bachelor,,,0
+moriarity,wakanda,male,bachelor,30.0,5.25,1
+sam,gotham,male,bachelor,24.0,7.26,0
+moriarity,,male,,22.0,9.17,0
+sam,purgatory ,female,bachelor,44.0,8.82,0
+sam,wakanda,male,,25.0,4.16,0
+watson,wakanda,male,bachelor,30.0,4.84,0
+sam,wakanda,male,masters,44.0,7.42,0
+sherlock,gotham,female,masters,27.0,7.77,0
+moriarity,purgatory ,male,,26.0,7.55,0
+watson,asgard,male,phd,20.0,,0
+sam,wakanda,male,bachelor,,7.06,0
+bobby,wakanda,male,bachelor,,8.95,1
+sherlock,wakanda,,phd,,,1
+dean,asgard,,masters,,4.07,0
+moriarity,wakanda,male,masters,26.0,4.18,0
+moriarity,asgard,male,,18.0,9.17,1
+moriarity,wakanda,male,bachelor,26.0,8.76,1
+castiel,,,phd,18.0,5.99,1
+moriarity,wakanda,male,bachelor,,5.15,0
+holmes,,male,bachelor,40.0,,0
+moriarity,wakanda,male,masters,25.0,,0
+moriarity,purgatory ,female,bachelor,27.0,7.63,0
+sam,gotham,male,bachelor,28.0,,1
+moriarity,purgatory ,female,,20.0,,0
+moriarity,asgard,male,masters,44.0,8.81,1
+sam,gotham,male,bachelor,23.0,8.87,1
+sam,purgatory ,female,bachelor,21.0,9.01,0
+sam,gotham,male,bachelor,21.0,9.1,1
+sam,gotham,female,bachelor,25.0,7.17,1
+holmes,wakanda,male,masters,43.0,7.92,1
+holmes,wakanda,male,bachelor,41.0,4.23,0
+watson,wakanda,male,masters,24.0,9.02,1
+moriarity,,male,bachelor,43.0,7.55,0
+moriarity,asgard,male,masters,21.0,7.84,0
+moriarity,wakanda,male,bachelor,41.0,8.04,0
+,asgard,male,bachelor,27.0,4.94,0
+bobby,wakanda,female,bachelor,20.0,4.63,1
+holmes,gotham,,bachelor,23.0,9.01,1
+holmes,asgard,male,,48.0,7.34,0
+moriarity,,male,bachelor,,8.42,0
+sam,wakanda,,bachelor,45.0,4.67,1
+bobby,wakanda,female,,41.0,4.31,1
+dean,wakanda,female,phd,23.0,5.62,0
+bobby,wakanda,male,bachelor,21.0,,1
+sam,gotham,male,bachelor,18.0,5.81,1
+moriarity,wakanda,male,masters,43.0,7.44,1
+moriarity,wakanda,,masters,21.0,5.89,0
+castiel,wakanda,male,,28.0,7.9,1
+moriarity,wakanda,male,bachelor,47.0,8.11,1
+dean,purgatory ,male,bachelor,48.0,7.48,0
+holmes,purgatory ,male,bachelor,18.0,9.18,1
+sam,gotham,female,masters,24.0,8.59,0
+sam,gotham,male,masters,23.0,4.19,1
+moriarity,purgatory ,female,phd,25.0,8.9,0
+sam,gotham,male,,43.0,9.42,0
+watson,gotham,,masters,,7.38,1
+holmes,wakanda,female,bachelor,23.0,9.25,1
+dean,gotham,male,phd,23.0,8.88,1
+holmes,asgard,male,bachelor,49.0,5.26,1
+bobby,wakanda,male,masters,22.0,5.5,0
+holmes,gotham,male,masters,50.0,7.26,0
+sam,wakanda,female,masters,23.0,4.87,1
+moriarity,purgatory ,male,,,7.77,0
+dean,asgard,male,phd,28.0,9.27,1
+,gotham,male,phd,43.0,4.38,1
+holmes,wakanda,male,bachelor,29.0,8.01,1
+dean,gotham,male,masters,22.0,9.22,1
+moriarity,,male,bachelor,20.0,,1
+sam,,female,bachelor,21.0,4.59,0
+sam,gotham,female,bachelor,25.0,,0
+castiel,wakanda,female,bachelor,23.0,7.49,1
+watson,,male,bachelor,44.0,5.77,1
+holmes,,,phd,41.0,8.99,1
+sam,purgatory ,male,phd,19.0,7.49,1
+,wakanda,male,bachelor,20.0,8.87,0
+moriarity,asgard,,,25.0,5.7,0
+sam,asgard,male,masters,28.0,5.57,1
+dean,gotham,male,bachelor,24.0,5.61,0
+moriarity,wakanda,male,bachelor,20.0,7.73,0
+watson,wakanda,female,phd,49.0,,0
+holmes,wakanda,,bachelor,26.0,9.06,0
+holmes,wakanda,,phd,24.0,,0
+moriarity,,male,phd,19.0,9.4,1
+moriarity,wakanda,male,,40.0,9.33,1
+moriarity,purgatory ,male,bachelor,26.0,5.19,1
+,,female,bachelor,,7.58,1
+watson,asgard,male,masters,22.0,7.63,0
+holmes,asgard,male,masters,41.0,9.07,0
+sam,,female,bachelor,27.0,8.77,1
+sam,wakanda,male,phd,24.0,8.81,0
+bobby,gotham,female,,47.0,7.2,0
+sam,asgard,male,bachelor,22.0,9.4,0
+watson,gotham,male,bachelor,24.0,8.68,0
+sam,wakanda,female,bachelor,43.0,8.58,0
+,gotham,male,,24.0,8.72,0
+moriarity,wakanda,female,masters,28.0,4.8,0
+sam,gotham,female,bachelor,18.0,,0
+sherlock,asgard,female,masters,19.0,7.22,1
+,gotham,male,,27.0,5.81,1
+moriarity,wakanda,male,bachelor,25.0,4.96,1
+bobby,wakanda,male,masters,28.0,9.23,0
+bobby,asgard,male,phd,,9.06,0
+holmes,wakanda,male,masters,18.0,7.54,1
+moriarity,purgatory ,male,,29.0,7.94,1
+bobby,wakanda,,,48.0,4.4,1
+sam,purgatory ,,bachelor,,,0
+moriarity,asgard,female,bachelor,26.0,,1
+sam,wakanda,,masters,40.0,7.24,0
+,gotham,female,bachelor,43.0,,0
+sherlock,wakanda,male,phd,44.0,4.58,0
+holmes,asgard,male,bachelor,45.0,5.67,1
+dean,asgard,male,,30.0,9.24,1
+sam,asgard,male,bachelor,30.0,7.88,0
+sam,purgatory ,female,masters,42.0,4.53,1
+,wakanda,male,bachelor,45.0,5.48,1
+bobby,,male,phd,40.0,5.71,1
+watson,gotham,male,bachelor,30.0,,0
+bobby,wakanda,male,bachelor,24.0,5.99,1
+sam,,male,bachelor,18.0,7.0,1
+dean,wakanda,male,bachelor,19.0,9.07,0
+moriarity,gotham,male,masters,26.0,7.93,1
+bobby,asgard,male,phd,27.0,5.62,0
+moriarity,gotham,male,bachelor,30.0,7.83,1
+holmes,gotham,female,phd,21.0,8.9,1
+sam,,female,bachelor,23.0,9.24,0
+moriarity,gotham,male,,26.0,7.96,0
+sherlock,,male,bachelor,49.0,9.38,0
+bobby,purgatory ,female,bachelor,30.0,9.48,0
+holmes,asgard,male,bachelor,21.0,7.94,1
+sam,gotham,male,bachelor,46.0,4.95,0
+,wakanda,male,phd,49.0,,0
+watson,asgard,male,masters,27.0,7.79,1
+watson,wakanda,male,bachelor,30.0,8.23,1
+holmes,purgatory ,male,masters,19.0,,0
+sam,,female,bachelor,30.0,9.11,0
+moriarity,,male,masters,22.0,7.0,0
+bobby,,male,bachelor,18.0,4.13,1
+holmes,purgatory ,female,masters,28.0,5.48,0
+holmes,wakanda,male,phd,27.0,,1
+holmes,purgatory ,female,bachelor,26.0,7.55,0
+moriarity,asgard,male,phd,25.0,,1
+moriarity,gotham,male,,47.0,7.35,1
+watson,,male,bachelor,23.0,7.36,1
+moriarity,purgatory ,male,phd,27.0,5.63,1
+moriarity,asgard,male,bachelor,21.0,8.34,1
+moriarity,purgatory ,male,,29.0,6.0,0
+watson,,male,phd,24.0,,0
+moriarity,,male,,29.0,4.16,0
+sam,asgard,,bachelor,27.0,7.77,0
+moriarity,wakanda,female,masters,28.0,,1
+holmes,wakanda,female,bachelor,,5.97,1
+sam,asgard,male,bachelor,27.0,7.54,0
+holmes,,female,bachelor,,9.09,0
+,wakanda,female,bachelor,27.0,,1
+moriarity,wakanda,male,,40.0,9.25,0
+watson,wakanda,male,,29.0,9.41,0
+moriarity,wakanda,male,,21.0,8.15,0
+,gotham,male,,42.0,8.57,0
+sam,wakanda,male,,21.0,9.13,0
+moriarity,,female,masters,19.0,7.63,0
+dean,,male,bachelor,28.0,,0
+holmes,,male,,30.0,7.19,0
+sam,asgard,male,bachelor,,5.36,0
+sam,wakanda,male,bachelor,44.0,8.97,1
+holmes,gotham,male,masters,50.0,7.65,0
+sherlock,gotham,male,bachelor,27.0,7.74,1
+moriarity,,,bachelor,,8.73,0
+,,male,bachelor,25.0,7.17,1
+dean,purgatory ,male,masters,28.0,7.41,0
+holmes,purgatory ,male,masters,25.0,,1
+holmes,asgard,,masters,25.0,9.24,1
+moriarity,wakanda,male,bachelor,46.0,7.69,1
+moriarity,,male,bachelor,,,1
+dean,,male,masters,30.0,7.94,0
+moriarity,gotham,male,bachelor,23.0,,1
+holmes,,male,masters,24.0,,1
+moriarity,,male,bachelor,46.0,4.42,1
+watson,purgatory ,male,bachelor,28.0,7.02,0
+sam,gotham,male,masters,48.0,4.54,0
+sam,wakanda,male,,28.0,4.49,0
+moriarity,gotham,male,bachelor,,8.29,1
+watson,gotham,male,masters,27.0,,0
+sam,gotham,female,masters,24.0,7.36,1
+holmes,,female,phd,42.0,8.46,1
+sam,gotham,male,bachelor,29.0,8.6,0
+sherlock,,male,bachelor,50.0,5.12,1
+dean,gotham,female,bachelor,43.0,5.0,0
+sam,gotham,male,bachelor,30.0,7.74,0
+sam,,male,bachelor,27.0,7.1,1
+sam,gotham,male,phd,29.0,9.46,0
+bobby,wakanda,male,bachelor,40.0,9.31,0
+sam,wakanda,male,masters,29.0,5.64,0
+watson,wakanda,male,bachelor,29.0,8.1,1
+sam,gotham,male,bachelor,18.0,8.82,1
+moriarity,purgatory ,male,phd,22.0,8.76,1
+moriarity,wakanda,male,bachelor,42.0,8.63,0
+moriarity,wakanda,male,bachelor,43.0,8.24,0
+,gotham,male,,,7.26,1
+moriarity,wakanda,male,bachelor,22.0,8.04,1
+,wakanda,,bachelor,18.0,9.37,1
+sam,wakanda,male,bachelor,23.0,,1
+sherlock,wakanda,female,,20.0,4.97,0
+dean,gotham,male,,21.0,5.53,1
+sherlock,purgatory ,female,,24.0,8.59,1
+watson,gotham,male,masters,26.0,,0
+moriarity,wakanda,male,bachelor,18.0,7.98,0
+sam,wakanda,,masters,30.0,5.41,0
+watson,gotham,male,masters,28.0,,0
+dean,wakanda,male,bachelor,18.0,4.26,1
+bobby,purgatory ,male,bachelor,23.0,4.98,0
+moriarity,gotham,male,masters,29.0,7.55,1
+moriarity,wakanda,female,,29.0,7.83,0
+castiel,wakanda,female,masters,30.0,9.12,1
+sam,wakanda,female,bachelor,25.0,9.23,0
+moriarity,wakanda,male,bachelor,19.0,7.7,0
+moriarity,wakanda,male,bachelor,21.0,8.92,1
+sam,wakanda,female,masters,26.0,7.6,0
+watson,wakanda,female,,26.0,8.92,0
+sam,,male,,29.0,9.49,0
+dean,wakanda,male,masters,27.0,4.4,0
+holmes,,male,phd,18.0,5.96,1
+sam,wakanda,male,,47.0,7.76,0
+dean,gotham,male,bachelor,24.0,7.32,1
+dean,gotham,male,,24.0,7.75,1
+moriarity,wakanda,male,bachelor,18.0,8.33,0
+sam,gotham,male,bachelor,50.0,,1
+,wakanda,,bachelor,25.0,7.02,1
+,gotham,male,,28.0,,0
+bobby,gotham,female,masters,30.0,8.98,1
+sherlock,gotham,male,bachelor,44.0,8.86,0
+sherlock,,,bachelor,19.0,9.09,0
+castiel,asgard,male,masters,24.0,7.71,1
+,wakanda,male,bachelor,27.0,7.9,0
+holmes,wakanda,female,bachelor,28.0,7.33,0
+sam,gotham,male,masters,22.0,8.65,1
+sam,wakanda,female,bachelor,23.0,7.92,1
+moriarity,asgard,male,phd,25.0,,1
+sherlock,gotham,male,masters,28.0,7.55,1
+moriarity,asgard,male,masters,23.0,8.81,1
+dean,wakanda,male,bachelor,20.0,9.31,0
+moriarity,wakanda,,bachelor,25.0,9.22,0
+moriarity,asgard,male,bachelor,19.0,7.32,1
+dean,,male,bachelor,28.0,,0
+sam,gotham,female,bachelor,30.0,8.21,1
+sam,,male,,20.0,7.37,0
+,purgatory ,male,phd,21.0,7.26,1
+sam,wakanda,female,masters,22.0,8.91,0
+,wakanda,male,bachelor,25.0,8.15,1
+sam,,male,bachelor,25.0,8.94,0
+,gotham,male,masters,,7.02,0
+,gotham,male,,24.0,8.72,0
+dean,wakanda,male,bachelor,28.0,8.06,0
+dean,asgard,,masters,,,0
+moriarity,wakanda,male,masters,,9.26,0
+,wakanda,,phd,27.0,7.92,0
+watson,wakanda,male,bachelor,29.0,8.1,1
+moriarity,gotham,male,bachelor,29.0,,1
+moriarity,gotham,male,bachelor,18.0,7.14,0
+dean,wakanda,male,,26.0,8.64,1
+sam,gotham,male,bachelor,19.0,7.03,1
+moriarity,wakanda,male,bachelor,24.0,9.14,0
+bobby,,male,masters,28.0,8.32,1
+holmes,gotham,female,phd,22.0,8.4,0
+sam,purgatory ,female,masters,29.0,8.48,1
+dean,wakanda,,phd,,8.35,0
+bobby,wakanda,male,bachelor,24.0,7.06,1
+sam,asgard,,bachelor,27.0,7.77,0
+sam,wakanda,male,bachelor,,7.06,0
+moriarity,wakanda,male,masters,28.0,7.49,0
+sam,gotham,female,masters,25.0,8.76,1
+holmes,wakanda,male,phd,,8.19,0
+sam,gotham,,,29.0,9.21,1
+moriarity,wakanda,female,,29.0,7.83,0
+moriarity,asgard,male,,19.0,7.91,1
+holmes,,female,phd,28.0,8.46,1
+dean,purgatory ,male,bachelor,26.0,8.52,1
+bobby,wakanda,female,,26.0,7.29,1
+watson,,male,bachelor,24.0,9.13,1
+sam,purgatory ,male,,28.0,,1
+moriarity,wakanda,male,bachelor,21.0,8.92,1
+sherlock,wakanda,female,phd,26.0,9.04,1
+bobby,asgard,male,phd,27.0,8.86,0
+moriarity,,male,,27.0,7.45,0
+,purgatory ,female,bachelor,30.0,7.79,1
+sam,asgard,female,bachelor,,8.28,0
+holmes,wakanda,male,bachelor,23.0,8.57,0
+,wakanda,male,,22.0,7.72,0
+moriarity,,,bachelor,29.0,8.09,0
+holmes,asgard,female,phd,22.0,8.12,1
+holmes,wakanda,female,masters,19.0,9.16,1
+sherlock,wakanda,male,bachelor,26.0,7.19,1
+moriarity,wakanda,male,phd,28.0,7.95,1
+moriarity,gotham,male,masters,21.0,7.41,1
+sherlock,wakanda,male,phd,,,0
+moriarity,asgard,male,,20.0,8.27,0
+bobby,wakanda,female,bachelor,20.0,9.15,1
+watson,purgatory ,female,masters,25.0,7.2,0
+moriarity,wakanda,male,bachelor,25.0,9.14,1
+holmes,,male,bachelor,18.0,,1
+moriarity,wakanda,male,bachelor,20.0,9.45,1
+bobby,purgatory ,male,bachelor,,7.1,1
+holmes,,male,masters,24.0,,1
+bobby,wakanda,male,masters,20.0,8.5,1
+sam,wakanda,female,phd,,8.36,1
+sam,gotham,male,,24.0,8.84,1
+holmes,purgatory ,male,bachelor,27.0,9.31,0
+moriarity,wakanda,female,bachelor,,7.86,0
+moriarity,wakanda,female,,23.0,9.12,1
+sam,wakanda,,masters,21.0,7.24,0
+holmes,purgatory ,male,bachelor,25.0,8.44,1
+dean,wakanda,male,masters,24.0,9.05,0
+moriarity,gotham,male,,26.0,7.35,1
+sam,gotham,male,bachelor,22.0,7.95,0
+moriarity,wakanda,male,masters,24.0,7.78,1
+sam,wakanda,,bachelor,22.0,7.46,1
+moriarity,,male,bachelor,29.0,9.44,1
+sam,wakanda,male,masters,21.0,,1
+moriarity,,male,phd,18.0,8.78,0
+sam,gotham,male,phd,29.0,9.46,0
+holmes,,male,phd,18.0,8.35,1
+moriarity,wakanda,,phd,23.0,7.52,0
+,asgard,male,bachelor,28.0,9.44,0
+bobby,,male,bachelor,20.0,7.82,1
+moriarity,wakanda,male,bachelor,30.0,9.31,1
+dean,gotham,male,masters,30.0,9.11,0
+moriarity,gotham,male,,26.0,7.96,0
+holmes,,male,masters,26.0,8.92,1
+moriarity,wakanda,male,masters,19.0,9.01,0
+sam,asgard,male,bachelor,30.0,7.88,0
+dean,gotham,male,masters,28.0,,1
+sam,asgard,,masters,24.0,8.94,1
