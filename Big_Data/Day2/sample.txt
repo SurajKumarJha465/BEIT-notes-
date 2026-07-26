@@ -1,0 +1,60 @@
+======================================================================
+HADOOP VERIFICATION AND TESTING SOURCE DATA FILE
+Generated: 2026-07-11
+Purpose: Functional testing of HDFS cluster operations and MapReduce
+======================================================================
+
+[SECTION 1: SYSTEM SYSTEM SYSTEM]
+The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware.
+HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware.
+HDFS provides high throughput access to application data and is suitable for applications that have large datasets.
+HDFS relaxes a few POSIX requirements to enable streaming access to file system data.
+HDFS was originally built as infrastructure for the Apache Nutch web search engine project.
+
+[SECTION 2: DATA DATA DATA]
+101  LOG_INFO     2026-07-11  User admin logged into the cluster successfully.
+102  LOG_WARN     2026-07-11  DataNode node-03 reported high disk utilization.
+103  LOG_INFO     2026-07-11  Starting block replication for block_id_998231.
+104  LOG_ERROR    2026-07-11  Connection timeout from NameNode to DataNode node-05.
+105  LOG_INFO     2026-07-11  MapReduce job job_20260711_0001 submitted by user test_user.
+106  LOG_INFO     2026-07-11  Task attempt task_20260711_0001_m_000000_0 finished successfully.
+107  LOG_WARN     2026-07-11  Garbage collection thresholds exceeded on ResourceManager.
+108  LOG_INFO     2026-07-11  File /user/test_user/input/data.txt created in HDFS.
+109  LOG_ERROR    2026-07-11  Failed to write block block_id_442151 due to network glitch.
+110  LOG_INFO     2026-07-11  NodeManager node-02 heartbeat received successfully.
+
+[SECTION 3: REPETITION REPETITION REPETITION]
+apple banana orange apple banana orange apple banana orange apple banana orange
+hadoop spark hive hadoop spark hive hadoop spark hive hadoop spark hive
+alpha beta gamma delta alpha beta gamma delta alpha beta gamma delta
+one two three four five one two three four five one two three four five
+test test test test test test test test test test test test test test test
+data data data data data data data data data data data data data data data
+cluster cluster cluster cluster cluster cluster cluster cluster cluster cluster
+
+[SECTION 4: SCENARIO ANALYSIS]
+When a client requests a file read from HDFS, it talks to the NameNode.
+The NameNode returns the locations of the blocks that make up the file.
+The client then connects directly to the nearest DataNode to read the blocks.
+This decentralized data transfer ensures that HDFS can scale out horizontally.
+Hadoop MapReduce processes data by splitting jobs into Map tasks and Reduce tasks.
+Map tasks run in parallel on local data stored across the cluster nodes.
+Reduce tasks aggregate the intermediate values to produce the final output.
+YARN stands for Yet Another Resource Negotiator and manages cluster resources.
+YARN separates resource management from processing components.
+This flexibility allows Hadoop to run non-MapReduce workloads like Spark and Flink.
+
+[SECTION 5: MATRIX MULTIPLICATION MOCK DATA]
+row_0,col_0,12
+row_0,col_1,43
+row_0,col_2,89
+row_1,col_0,54
+row_1,col_1,0
+row_1,col_2,22
+row_2,col_0,91
+row_2,col_1,73
+row_2,col_2,64
+
+======================================================================
+END OF HADOOP VERIFICATION AND TESTING SOURCE DATA FILE
+======================================================================

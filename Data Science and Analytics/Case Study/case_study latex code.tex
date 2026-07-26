@@ -1,0 +1,457 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{tabularx}
+
+% ---------- Colors ----------
+\definecolor{headingblue}{RGB}{31,56,100}
+\definecolor{subblue}{RGB}{46,83,149}
+\definecolor{tableheadbg}{RGB}{46,83,149}
+\definecolor{lightgray}{RGB}{136,136,136}
+
+% ---------- Heading styles ----------
+\titleformat{\section}{\normalfont\Large\bfseries\color{headingblue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{subblue}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{black}}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{18pt}{10pt}
+\titlespacing*{\subsection}{0pt}{14pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{10pt}{6pt}
+
+% ---------- Header/Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\small\color{lightgray}Student Placement Prediction --- Case Study}
+\fancyfoot[C]{\thepage}
+
+% ---------- Hyperref ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=subblue,
+    citecolor=subblue,
+    urlcolor=subblue,
+    pdftitle={Student Placement Prediction: A Data Analysis Case Study}
+}
+
+% ---------- Helper commands ----------
+\newcommand{\fig}[3]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#2\linewidth]{images/#1}
+        \caption{#3}
+    \end{figure}
+}
+
+\newcommand{\reject}{\textbf{Reject } $H_0$}
+\newcommand{\failreject}{\textbf{Fail to reject } $H_0$}
+
+\begin{document}
+
+% ======================================================
+% TITLE PAGE
+% ======================================================
+\begin{titlepage}
+\centering
+\vspace*{2.5cm}
+
+{\large\textsc{Case Study}}\\[1cm]
+
+{\huge\bfseries\color{headingblue} Student Placement Prediction:}\\[0.3cm]
+{\huge\bfseries\color{headingblue} A Data Analysis Case Study}\\[1.2cm]
+
+{\itshape\large\color{gray} An Exploratory Data Analysis and Statistical Study of\\
+Student Demographic, Academic, and Placement Data}\\[2.5cm]
+
+\begin{tabularx}{0.75\linewidth}{|>{\bfseries}p{4cm}|X|}
+\hline
+Team Members & \rule{0pt}{1em}\underline{\hspace{6cm}} \\ \hline
+Roll Number(s) & \underline{\hspace{6cm}} \\ \hline
+Course / Subject & \underline{\hspace{6cm}} \\ \hline
+Institution & \underline{\hspace{6cm}} \\ \hline
+Guided By & \underline{\hspace{6cm}} \\ \hline
+Date of Submission & \underline{\hspace{6cm}} \\ \hline
+\end{tabularx}
+
+\vfill
+\end{titlepage}
+
+% ======================================================
+% TABLE OF CONTENTS
+% ======================================================
+\tableofcontents
+\newpage
+
+% ======================================================
+% 2. PROBLEM STATEMENT
+% ======================================================
+\section{Problem Statement}
+
+Campus placement outcomes are of central concern to students, academic institutions, and recruiters alike. Institutions want to understand which student attributes --- demographic (age, gender, city), academic (CGPA, degree/profession level), or otherwise --- are meaningfully associated with whether a student is placed in a job after graduation. Understanding these relationships helps institutions design better placement support programs, and helps students understand what factors genuinely affect employability outcomes versus common assumptions and myths.
+
+This case study analyzes a dataset of 1{,}100 student records containing demographic and academic attributes alongside a binary placement outcome. The objective is to clean and prepare the raw data, explore it visually, and apply formal statistical tests to answer the central question:
+
+\begin{center}
+\itshape ``Which student attributes, if any, are statistically associated with placement status?''
+\end{center}
+
+The analysis follows a complete data-science workflow --- data cleaning, transformation, encoding, outlier handling, visualization, and hypothesis testing --- culminating in evidence-based conclusions about the drivers (or absence thereof) of student placement in this dataset.
+
+% ======================================================
+% 3. INFORMATION OF THE DATA
+% ======================================================
+\section{Information of the Data}
+
+The raw dataset contains 1{,}100 rows and 7 columns, mixing categorical (nominal) and numerical (continuous) features, along with a binary target variable. Table~\ref{tab:columns} summarizes each column.
+
+\begin{table}[H]
+\centering
+\caption{Dataset column summary}
+\label{tab:columns}
+\begin{tabularx}{\linewidth}{l l X l}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{Column}} & \textcolor{white}{\textbf{Type}} & \textcolor{white}{\textbf{Description}} & \textcolor{white}{\textbf{Missing (raw)}} \\
+\midrule
+\texttt{name} & Categorical (text) & Student's first name & 85 (7.7\%) \\
+\texttt{city} & Categorical (nominal) & City of residence (asgard, wakanda, gotham, purgatory) & 184 (16.7\%) \\
+\texttt{gender} & Categorical (binary) & Gender of the student (male / female) & 99 (9.0\%) \\
+\texttt{profession} & Categorical (ordinal) & Highest degree pursued (bachelor / masters / phd) & 169 (15.4\%) \\
+\texttt{age} & Numeric (continuous) & Student's age in years & 112 (10.2\%) \\
+\texttt{cgpa} & Numeric (continuous) & Cumulative Grade Point Average (0--10 scale) & 132 (12.0\%) \\
+\texttt{placed} & Binary (target) & Placement outcome (1 = placed, 0 = not placed) & 0 (0\%) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The dataset shape was verified using \texttt{df.shape} and \texttt{df.info()}, confirming 1{,}100 entries across 7 columns with the null counts and dtypes shown below.
+
+\fig{data_info.png}{0.75}{Dataset shape, sample rows, and \texttt{df.info()} output}
+
+The target variable \texttt{placed} is well balanced, with 521 students not placed (50.3\%) and 514 students placed (49.7\%) after cleaning --- an almost even 50/50 split, which is favorable for unbiased statistical comparison between the two groups.
+
+% ======================================================
+% 4. SOURCE OF DATA
+% ======================================================
+\section{Source of Data}
+
+The dataset (\texttt{my\_data.csv}) was provided as a course/assignment dataset for the purpose of this case study. It is a structured, tabular dataset resembling a typical student-placement record used in academic exercises on data cleaning and statistical analysis.
+
+It is worth noting that the categorical values in the \texttt{name} column (e.g., moriarity, holmes, sherlock, sam, dean, castiel, bobby) and in the \texttt{city} column (asgard, wakanda, gotham, purgatory) are drawn from popular fictional universes rather than real-world identifiers. This strongly suggests the dataset is synthetically generated / anonymized for educational purposes rather than sourced from a real institutional placement cell. This context is relevant when interpreting results --- patterns found here characterize the dataset itself and the methodology applied to it, not any real population of students.
+
+% ======================================================
+% 5. DATA PREPROCESSING
+% ======================================================
+\section{Data Preprocessing}
+
+\subsection{a. Data Cleaning}
+
+\subsubsection*{Duplicate Records}
+Duplicate rows were checked with \texttt{df.duplicated().sum()}. The raw dataset (1{,}100 $\times$ 7) contained 65 fully duplicate rows (5.9\% of the data), which were removed using \texttt{df.drop\_duplicates()}. A later verification pass, run after feature engineering (standardization, binning, and encoding had expanded the frame to 16 columns), confirmed 1{,}032 unique rows with zero remaining duplicates.
+
+\fig{duplicate_data.jpg}{0.75}{Detecting the 65 duplicate rows before removal}
+\fig{drop_duplicate.jpg}{0.75}{Shape confirmation after dropping duplicates}
+
+\subsubsection*{Missing Value Detection and Treatment}
+All seven columns except the target were found to contain missing values, ranging from 8.2\% (\texttt{name}) to 17.8\% (\texttt{city}). Given the scale of missingness, rows were not dropped outright (this would have discarded a large fraction of the dataset); instead, column-appropriate imputation was applied:
+
+\begin{itemize}[leftmargin=1.2cm]
+    \item \textbf{Numerical columns} (\texttt{age}, \texttt{cgpa}): imputed with the column \textbf{median}, which is robust to skew and outliers.
+    \item \textbf{Categorical columns} (\texttt{city}, \texttt{gender}, \texttt{profession}): imputed with the column \textbf{mode} (most frequent category).
+    \item \texttt{name}: imputed with the placeholder label ``Unknown'', since it carries no analytical/statistical value beyond identification.
+\end{itemize}
+
+\fig{handling_missing_data.jpg}{0.8}{Missing value counts and percentage-missing per column}
+\fig{handling_age_cgpa.jpg}{0.7}{Median imputation for \texttt{age} and \texttt{cgpa}}
+\fig{handling_name_.jpg}{0.7}{Mode imputation for \texttt{city}/\texttt{gender}/\texttt{profession} and placeholder fill for \texttt{name}}
+
+After imputation, \texttt{df.isnull().sum()} confirmed zero missing values across all columns.
+
+\subsubsection*{Data Type Correction}
+\texttt{df.dtypes} revealed that \texttt{age} was stored as \texttt{float64} despite representing whole years. It was cast to an integer type using \texttt{df["age"] = df["age"].astype(int)} for consistency and readability.
+
+\fig{datatype_in_column.jpg}{0.7}{Correcting the dtype of the \texttt{age} column}
+
+\subsection{b. Data Standardization}
+
+The numerical features \texttt{age} and \texttt{cgpa} were standardized using scikit-learn's \texttt{StandardScaler}, which rescales values to zero mean and unit variance ($z$-scores). This step is essential before running distance- or scale-sensitive analyses, and was verified by re-computing the mean ($\approx 0$) and standard deviation ($=1.0$) of the resulting \texttt{age\_standardized} and \texttt{cgpa\_standardized} columns.
+
+\fig{standardization.jpg}{0.65}{\texttt{StandardScaler} applied to \texttt{age} and \texttt{cgpa}, with verification statistics}
+
+For reference, the descriptive statistics of the cleaned (pre-standardization) numeric columns were:
+
+\fig{stats_before_standarization.jpg}{0.55}{\texttt{df.describe()} after cleaning, before standardization}
+
+\subsection{c. Data Transformation: Binning}
+
+To support categorical-style analysis (e.g., count plots, chi-square tests) alongside the continuous variables, two new binned features were engineered using \texttt{pd.cut()}:
+
+\begin{itemize}[leftmargin=1.2cm]
+    \item \textbf{Age\_Group}: Young (18--25), Adult (25--35), Senior (35--60).
+    \item \textbf{CGPA\_Category}: Low (4--6), Average (6--8), High (8--10).
+\end{itemize}
+
+\fig{tansformation_01.jpg}{0.8}{Binning code for \texttt{Age\_Group} and \texttt{CGPA\_Category}}
+\fig{tansformation_02.jpg}{0.55}{Resulting distribution of \texttt{Age\_Group} and \texttt{CGPA\_Category}}
+
+The resulting distribution is fairly balanced: 437 Young, 398 Adult, and 200 Senior students; and 423 High, 412 Average, and 200 Low CGPA students.
+
+\subsection{d. Handling Categorical Data: Encoding Techniques}
+
+Before encoding, a readable copy of the dataframe (\texttt{df\_viz}) was preserved with the original human-readable category labels, specifically for use in visualizations and hypothesis testing where readability matters more than numeric encoding.
+
+\fig{encoding.jpg}{0.85}{Preserving a readable copy (\texttt{df\_viz}) before encoding}
+
+\texttt{gender}, a binary categorical variable, was transformed using \textbf{Label Encoding} (scikit-learn's \texttt{LabelEncoder}), mapping female $\rightarrow$ 0 and male $\rightarrow$ 1.
+
+\fig{labelencoding.jpg}{0.85}{Label encoding applied to \texttt{gender}}
+
+\texttt{city} and \texttt{profession}, both nominal categorical variables with more than two categories, were transformed using \textbf{One-Hot Encoding} (\texttt{pd.get\_dummies}), avoiding the false ordinal relationship that label encoding would have implied for these columns.
+
+\fig{one_hot_encoding.jpg}{0.85}{One-hot encoding of \texttt{city} and \texttt{profession}}
+
+\subsection{e. Outlier Detection}
+
+Outliers in the two continuous variables (\texttt{age}, \texttt{cgpa}) were detected using two complementary methods: visual inspection via box plots, and the mathematical Interquartile Range (IQR) rule (values beyond $Q1 - 1.5\times IQR$ or $Q3 + 1.5\times IQR$).
+
+\fig{outliers_age_b.jpg}{0.55}{Box plot of \texttt{age}, showing high-end outliers above $\sim$42 years}
+\fig{outliers_age_i.jpg}{0.5}{IQR bounds for \texttt{age} (10.0, 42.0) and the 154 rows identified as outliers}
+\fig{outliers_cgpa_b.jpg}{0.5}{Box plot of CGPA, showing a cluster of low-end outliers below $\sim$5.2}
+
+Rather than deleting outlier rows outright (which would have discarded a further $\sim$15\% of the data), extreme values were clipped to the IQR boundary limits using \texttt{df["age"] = df["age"].clip(lower\_limit, upper\_limit)}. A follow-up check confirmed zero rows remained outside the bounds after clipping.
+
+\fig{handling_outliers.jpg}{0.7}{Clipping outliers to IQR boundaries and confirming zero out-of-bound rows}
+
+After all cleaning and outlier handling, the final numeric summary (age: mean 27.74, range 18--42; cgpa: mean 7.61, range 4.01--9.49; placed: mean 0.497) reflects a clean, well-behaved dataset of 1{,}035 rows ready for analysis.
+
+% ======================================================
+% 6. DATA VISUALIZATION
+% ======================================================
+\section{Data Visualization}
+
+A range of univariate and bivariate plots were generated using \texttt{matplotlib} and \texttt{seaborn} to explore the distribution of each feature and its relationship with the placement outcome.
+
+\subsection{Univariate Distributions}
+
+\fig{age_cgpa_distribution.jpg}{0.5}{Distribution of Age (mildly bimodal, with a secondary cluster around 40--42) and CGPA (right-skewed, with a secondary low-scoring cluster below 6)}
+\fig{gender_CP.jpg}{0.55}{Gender distribution: males ($\sim$813) considerably outnumber females ($\sim$220) in the dataset}
+\fig{city_CP.jpg}{0.6}{City distribution: Wakanda is the dominant city ($\sim$547 students), followed by Gotham, Asgard, and Purgatory}
+\fig{profession_CP.jpg}{0.55}{Profession (degree level) distribution: Bachelor's students dominate ($\sim$657), followed by Master's ($\sim$254) and PhD ($\sim$119)}
+
+The target variable itself is balanced: 521 students not placed vs. 514 placed (50.3\% vs. 49.7\%), which avoids the class-imbalance issues that can complicate group comparisons.
+
+\subsection{Placement vs. Categorical Features}
+
+\fig{genderVSplacement.png}{0.55}{Placement counts by Gender}
+\fig{cityVSplacement.png}{0.6}{Placement counts by City}
+\fig{placementVSprofession.png}{0.55}{Placement counts by Profession}
+\fig{age_groupVSplacement.png}{0.55}{Placement counts by Age Group}
+\fig{cgpa_catogaryVSplacement.png}{0.55}{Placement counts by CGPA Category}
+
+The placement rate (\% placed) within each category, computed with \texttt{groupby().mean()}, was:
+
+\begin{table}[H]
+\centering
+\caption{Placement rate by Gender}
+\begin{tabular}{ll}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{Gender}} & \textcolor{white}{\textbf{Placement Rate}} \\
+\midrule
+Female & 42.99\% \\
+Male & 51.47\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Placement rate by Profession}
+\begin{tabular}{ll}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{Profession}} & \textcolor{white}{\textbf{Placement Rate}} \\
+\midrule
+Bachelor & 50.08\% \\
+Masters & 48.44\% \\
+PhD & 50.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Placement rate by City}
+\begin{tabular}{ll}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{City}} & \textcolor{white}{\textbf{Placement Rate}} \\
+\midrule
+Asgard & 46.15\% \\
+Gotham & 52.36\% \\
+Purgatory & 45.95\% \\
+Wakanda & 50.18\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Gender shows the widest gap in raw placement rate (male 51.5\% vs. female 43.0\%) among the categorical breakdowns, foreshadowing the statistically significant chi-square result found in Section~7.
+
+\subsection{Placement vs. Numeric Features}
+
+\fig{ageVSgpa_scatterplot.jpg}{0.75}{Age vs. CGPA scatter plot, colored by placement status --- no visible separation between the two placement groups}
+\fig{ageVSplaced_BP.png}{0.5}{Age distribution by placement status (box plot) --- near-identical medians and spread}
+\fig{cgpaVSplaced_BP.png}{0.5}{CGPA distribution by placement status (box plot) --- near-identical medians and spread}
+
+The descriptive statistics confirm the near-total overlap visible in the box plots:
+
+\fig{stats_for_BP.jpg}{0.75}{Age and CGPA summary statistics grouped by placement status}
+
+\subsection{Correlation Heatmap}
+
+\fig{heatmap.png}{0.6}{Correlation heatmap of \texttt{age}, \texttt{cgpa}, \texttt{gender}, and \texttt{placed}}
+
+All pairwise correlations among \texttt{age}, \texttt{cgpa}, \texttt{gender}, and \texttt{placed} are very close to zero (largest magnitude: 0.07 between \texttt{gender} and \texttt{placed}), visually confirming the absence of any strong linear relationship among these variables.
+
+% ======================================================
+% 7. STATISTICAL ANALYSIS
+% ======================================================
+\section{Statistical Analysis}
+
+Beyond visual inspection, formal statistical hypothesis tests were used to determine whether observed differences and associations in the data are statistically significant ($\alpha = 0.05$) or could plausibly be due to random chance.
+
+\subsection{a. Hypothesis Testing}
+
+\subsubsection*{Test 1: Independent $t$-test --- CGPA vs. Placed}
+\textit{$H_0$: There is no significant difference in mean CGPA between placed and not-placed students.}\\
+\textit{$H_1$: There is a significant difference in mean CGPA between placed and not-placed students.}
+
+\fig{independent_t_test_cgpaVSplaced.jpg}{0.85}{Independent $t$-test, CGPA vs. Placed: $t = 0.1197$, $p = 0.9048$}
+
+\textbf{Result:} $p = 0.9048 > 0.05 \Rightarrow$ \failreject. No statistically significant difference in CGPA between placed and not-placed students.
+
+\subsubsection*{Test 2: Independent $t$-test --- Age vs. Placed}
+\textit{$H_0$: There is no significant difference in mean Age between placed and not-placed students.}\\
+\textit{$H_1$: There is a significant difference in mean Age between placed and not-placed students.}
+
+\fig{independent_t_test_ageVSplaced.jpg}{0.85}{Independent $t$-test, Age vs. Placed: $t = 0.2921$, $p = 0.7703$}
+
+\textbf{Result:} $p = 0.7703 > 0.05 \Rightarrow$ \failreject. No statistically significant difference in Age between placed and not-placed students.
+
+\subsubsection*{Test 3: Chi-square Test --- Gender vs. Placed}
+\textit{$H_0$: Gender and Placement are independent (no association).}\\
+\textit{$H_1$: Gender and Placement are dependent (there is an association).}
+
+\fig{chisquare_test__genderVSplaced.jpg}{0.85}{Chi-square test, Gender vs. Placed: $\chi^2 = 4.6751$, $df = 1$, $p = 0.0306$}
+
+\textbf{Result:} $p = 0.0306 < 0.05 \Rightarrow$ \reject. There is a statistically significant association between Gender and Placement.
+
+\subsubsection*{Test 4: Chi-square Test --- Profession vs. Placed}
+\textit{$H_0$: Profession and Placement are independent (no association).}\\
+\textit{$H_1$: Profession and Placement are dependent (there is an association).}
+
+\fig{chisquare_test_professionVSplaced.jpg}{0.85}{Chi-square test, Profession vs. Placed: $\chi^2 = 0.2042$, $df = 2$, $p = 0.9029$}
+
+\textbf{Result:} $p = 0.9029 > 0.05 \Rightarrow$ \failreject. No statistically significant association between Profession and Placement.
+
+\subsubsection*{Summary of Hypothesis Tests}
+
+\begin{table}[H]
+\centering
+\caption{Summary of hypothesis test results}
+\begin{tabularx}{\linewidth}{X l l l}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{Test}} & \textcolor{white}{\textbf{Statistic}} & \textcolor{white}{\textbf{$p$-value}} & \textcolor{white}{\textbf{Conclusion ($\alpha=0.05$)}} \\
+\midrule
+CGPA vs Placed ($t$-test) & $t=0.1197$ & 0.9048 & Not significant \\
+Age vs Placed ($t$-test) & $t=0.2921$ & 0.7703 & Not significant \\
+Gender vs Placed ($\chi^2$) & $\chi^2=4.6751$ & 0.0306 & Significant \\
+Profession vs Placed ($\chi^2$) & $\chi^2=0.2042$ & 0.9029 & Not significant \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{b. Correlation Analysis}
+
+Pearson correlation coefficients were computed for each pair of numeric variables, along with their statistical significance:
+
+\fig{corelation_Analysis.jpg}{0.85}{Pearson correlation coefficients and full correlation matrix}
+
+\begin{table}[H]
+\centering
+\caption{Pearson correlation summary}
+\begin{tabularx}{\linewidth}{X l l l}
+\toprule
+\rowcolor{tableheadbg}
+\textcolor{white}{\textbf{Pair}} & \textcolor{white}{\textbf{Pearson $r$}} & \textcolor{white}{\textbf{$p$-value}} & \textcolor{white}{\textbf{Significant?}} \\
+\midrule
+Age vs CGPA & $-0.0404$ & 0.1945 & No \\
+Age vs Placed & 0.0091 & 0.7703 & No \\
+CGPA vs Placed & 0.0037 & 0.9048 & No \\
+Gender vs Placed & 0.070 & --- & Consistent w/ $\chi^2$ result \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Every correlation coefficient is close to zero ($|r| < 0.08$), confirming that none of the numeric variables share a meaningful linear relationship with each other or with the placement outcome, consistent with the heatmap in Figure~11 and the hypothesis test results above.
+
+% ======================================================
+% 8. RESULTS AND DISCUSSION
+% ======================================================
+\section{Results and Discussion}
+
+Combining the visual exploration and formal statistical testing, the following conclusions emerge from this dataset:
+
+\begin{itemize}[leftmargin=1.2cm]
+    \item \textbf{Gender} is the only feature with a statistically significant association with placement ($\chi^2 = 4.6751$, $p = 0.0306$). Male students show a placement rate of 51.5\% versus 43.0\% for female students --- a gap of roughly 8.5 percentage points.
+    \item \textbf{CGPA} shows no significant relationship with placement, either via $t$-test ($p = 0.9048$) or correlation ($r = 0.0037$, $p = 0.9048$). Students who were placed and not placed have virtually identical CGPA distributions (means of 7.61 vs. 7.60).
+    \item \textbf{Age} shows no significant relationship with placement, either via $t$-test ($p = 0.7703$) or correlation ($r = 0.0091$, $p = 0.7703$).
+    \item \textbf{Profession} (degree level) shows no significant association with placement ($\chi^2 = 0.2042$, $p = 0.9029$); bachelor's, master's, and PhD students are placed at almost identical rates ($\sim$48--50\%).
+    \item \textbf{City} shows a modest spread in raw placement rates (45.9\% to 52.4\%) but was not formally tested; given the pattern seen with profession, this spread likely reflects sampling noise rather than a true effect.
+    \item \textbf{Age and CGPA} are themselves uncorrelated ($r = -0.0404$, not significant), indicating these two numeric features vary independently of one another in this dataset.
+\end{itemize}
+
+Overall, the data suggests that in this dataset, placement outcome behaves close to a random 50/50 split with respect to academic performance (CGPA), age, and degree level --- the only detectable (and still modest) signal is a gender-based difference. This is a somewhat counter-intuitive finding relative to common assumptions (e.g., that CGPA strongly predicts placement), and is worth flagging explicitly rather than assuming CGPA ``must'' matter.
+
+Given the earlier observation that the dataset's names and cities are drawn from fictional universes, it is plausible that placement outcomes here were generated with a random or near-random process (possibly with a small deliberate gender effect), rather than reflecting a genuine underlying real-world mechanism. This context should be kept in mind: the statistical conclusions are valid descriptions of this dataset, but should not be over-generalized to real placement processes without validation on real institutional data.
+
+% ======================================================
+% 9. CHALLENGES AND FUTURE ENHANCEMENT
+% ======================================================
+\section{Challenges and Future Enhancement}
+
+\subsection*{Challenges Encountered}
+\begin{itemize}[leftmargin=1.2cm]
+    \item High missing-value rates (8\%--18\%) across nearly every column required careful, column-specific imputation strategy rather than simple row deletion, to avoid losing a large share of the dataset.
+    \item A meaningful number of exact duplicate rows (5.9\%) had to be identified and removed to avoid double-counting records in downstream statistics.
+    \item Right- and left-skewed distributions (age's bimodal shape; CGPA's low-end cluster) required outlier handling (IQR clipping) rather than naive $z$-score filtering, to avoid discarding legitimate data.
+    \item The weak-to-negligible correlations and mostly non-significant test results meant the dataset offered limited explanatory power for placement --- a reminder that clean methodology can still yield a ``no strong effect'' conclusion, which is itself a valid and useful finding.
+    \item Categorical encoding choices (label vs. one-hot) had to be made carefully to avoid introducing false ordinal relationships into nominal variables like \texttt{city}.
+\end{itemize}
+
+\subsection*{Future Enhancements}
+\begin{itemize}[leftmargin=1.2cm]
+    \item Incorporate richer features that plausibly drive placement in the real world --- interview performance, technical/soft-skill assessments, internship experience, extracurricular involvement, and communication skills.
+    \item Apply predictive machine learning models (e.g., Logistic Regression, Random Forest, Gradient Boosting) to formally test predictive power and quantify feature importance, going beyond pairwise hypothesis tests to a multivariate model.
+    \item Use multivariate/interaction analysis (e.g., two-way ANOVA, interaction terms) to check whether combinations of features (e.g., gender $\times$ profession) reveal effects not visible in single-variable tests.
+    \item Validate findings on a real, verified institutional placement dataset to confirm whether the gender effect observed here generalizes, and to check it does not stem from confounding or sampling artifacts.
+    \item Apply more advanced missing-data techniques (e.g., KNN or iterative/MICE imputation) instead of simple median/mode imputation, to better preserve relationships between correlated features when imputing.
+    \item Build an interactive dashboard (e.g., in Power BI, Tableau, or a Streamlit app) to allow stakeholders to explore placement trends dynamically across cities, professions, and demographic segments.
+\end{itemize}
+
+\end{document}
